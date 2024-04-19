@@ -23,7 +23,7 @@
 
 		expect(detailsElement).not.toHaveAttribute('open');
 
-		userEvent.click(summaryElement);
+		await userEvent.click(summaryElement);
 
 		expect(detailsElement).toHaveAttribute('open');
 	}}
@@ -39,7 +39,7 @@
 
 		expect(detailsElement).toHaveAttribute('open');
 
-		userEvent.click(summaryElement);
+		await userEvent.click(summaryElement);
 
 		expect(detailsElement).not.toHaveAttribute('open');
 	}}

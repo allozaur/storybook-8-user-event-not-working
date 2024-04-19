@@ -22,7 +22,7 @@
 
 		expect(checkboxElement.checked).toBeFalsy();
 
-		userEvent.click(checkboxElement);
+		await userEvent.click(checkboxElement);
 
 		expect(checkboxElement.checked).toBeTruthy();
 	}}
@@ -37,7 +37,7 @@
 
 		expect(checkboxElement.checked).toBeTruthy();
 
-		userEvent.click(checkboxElement);
+		await userEvent.click(checkboxElement);
 
 		expect(checkboxElement.checked).toBeFalsy();
 	}}
